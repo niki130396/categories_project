@@ -24,7 +24,7 @@ class Common(Configuration):
 
         # Your apps
         'categories_api.users',
-
+        'categories_api.categories'
     )
 
     # https://docs.djangoproject.com/en/2.0/topics/http/middleware/
