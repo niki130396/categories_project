@@ -1,9 +1,9 @@
 from django.contrib import admin
 from categories_api.categories import models
 
-# Register your models here.
+from mptt.admin import MPTTModelAdmin
 
 
 @admin.register(models.Category)
-class CategoryAdmin(admin.ModelAdmin):
-    pass
+class CategoryAdmin(MPTTModelAdmin):
+    filter_horizontal = ('similar_category', )
