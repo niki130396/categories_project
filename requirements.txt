@@ -37,3 +37,5 @@ boto3==1.19.7
 
 # Added deps
 Pillow==8.4.0
+django-mptt==0.13.4
+drf-spectacular==0.20.2
