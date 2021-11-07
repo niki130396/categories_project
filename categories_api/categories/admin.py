@@ -6,4 +6,4 @@ from mptt.admin import MPTTModelAdmin
 
 @admin.register(models.Category)
 class CategoryAdmin(MPTTModelAdmin):
-    filter_horizontal = ('similar_category', )
+    filter_horizontal = ('similar_categories', )
