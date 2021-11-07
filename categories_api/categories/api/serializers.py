@@ -12,3 +12,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class CategoriesByDepthSerializer(serializers.Serializer):
     from_level = serializers.IntegerField(min_value=0, validators=[depth_level_validator])
+
+
+class CategoriesBySimilaritySerializer(serializers.Serializer):
+    category_id = serializers.IntegerField(min_value=0)
