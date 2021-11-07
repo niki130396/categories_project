@@ -9,8 +9,8 @@ class Category(MPTTModel):
     image = models.ImageField(null=True, blank=True)
     parent = TreeForeignKey(
         "self", on_delete=models.CASCADE, related_name="children", blank=True, null=True)
-    similar_category = models.ManyToManyField(
-        "self", related_name="similar_categories", blank=True)
+    similar_categories = models.ManyToManyField(
+        "self", blank=True)
 
     class Meta:
         verbose_name_plural = "categories"
