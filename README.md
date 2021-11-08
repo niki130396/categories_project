@@ -21,3 +21,7 @@ Run a command inside the docker container:
 ```bash
 docker-compose run --rm web [command]
 ```
+
+API documentation is available at: ***/api/v1/***
+
+The shortest path to a given similar category algorithm is available in the algorithms.py file.
